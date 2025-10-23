@@ -45,7 +45,7 @@
                             <a class="nav-link" href="#comprar">Quero Comprar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Games</a>
+                            <a class="nav-link" href="#games">Games</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">+Populares</a>
@@ -62,8 +62,9 @@
                             <a class="nav-link" href="#">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                         </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -121,25 +122,45 @@
     <!---------------------------------------------------------------------------------- FIM COMPRAR ---------------------------------------------------------------------------------->
 
     <!---------------------------------------------------------------------------------- GAMES ---------------------------------------------------------------------------------->
-    <section class="container-fluid comprar text-light" id="comprar">
-        <h1 id="nomePokemon"></h1>
-        <h3 id="hpPokemon"></h3>
-        <h3 id="attackPokemon"></h3>
-        <h3 id="defensePokemon"></h3>
-        <h3 id="sAttackPokemon"></h3>
-        <h3 id="sDefensePokemon"></h3>
-        <h3 id="speedPokemon"></h3>
-        <h4 id="legendPokemon"></h4>
+    <section class="container-fluid games text-light" id="games">
+        <h2 class="games-titulo ms-5">Games</h2>
+        
+        <!-- Criando o grid de card para os games -->
+        <div class="row my-3 px-5 d-flex justify-content-center align-items-center" id="grid-cards"></div>
     </section>
+    <!---------------------------------------------------------------------------------- FIM GAMES ---------------------------------------------------------------------------------->
 
+<!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Efetuar Login
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Fazer Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
     <!-- Chamada do JS do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous">
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous">
     </script>
 
     <!-- Chamada o meu JS -->
-    <script src="./js/base.js"></script>
+    <script type="module" src="./js/montarCards.js"></script>
+    <!-- <script src="./js/base.js"></script> -->
 </body>
 
 </html>
