@@ -62,6 +62,6 @@ const videos = [
     'https://www.youtube.com/embed/n49TsZAwFEs?si=AfSFxY4aWU8rGZoc',
     'https://www.youtube.com/embed/b_iU_gnn28U?si=Fo115lpj5GAV1puc',
     'https://www.youtube.com/embed/u4-FCsiF5x4?si=0pof_fBVtMyzzZ49',
-    'https://www.youtube.com/embed/bMgiFzf2ubE?si=_8iyFeghndlmeA3',
+    'https://www.youtube.com/embed/lg591kVaGlc?si=lHvglLu33Fq9gXTa',
     'https://www.youtube.com/embed/OYmUgbVLs4k?si=UjJHNPYT4EH9F4Pr'
 ];

@@ -1,0 +1,26 @@
+Formulários - componentes de seleção ou digitação de informações
+
+<form id="" name="" method="" action="">
+    id = identificador único(não pode repetir) usados em JS
+    
+    name = nome do campo - recebe o mesmo valor do id = usado no Back-end(servidor)
+           importante pois através dele a aplicação que está no servidor consegue
+           recuperar as informações que foram digitadas.
+    
+    method = define como as informações serão enviadas ao servidor
+           método get = método padrão = as informações são enviadas na barra de url
+            devemos usar em aplicações de busca - links dinâmicos
+            Usarei esse método por causa do Live Server
+           método post = as informações são enviadas no corpo da página - dessa forma
+           elas não são visualizadas durante o envio, como acontece com o get.
+           Usado: login - envio de dados sensíveis - cadastros - finalizar pedidos
+    
+    action = endereço da aplicação que irá recuperar as informações digitadas. Quando
+            usuário clicar no botão do formulário (Enviar - Login - Cadastrar - Comprar),
+            o formulário faz uma requisição chamando a aplicação que está aponta na action,
+            essa ação chamamos de evento Submit (enviar os dado para o servidor), e ele recupera o que foi digitado.
+</form>
+ 
+Campos do formulário são caixas, que na grande maioria, têm a mesma renderização
+98% dos campos são inseridos pela tag <input> com o atributo type=""
+ 

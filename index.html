@@ -42,27 +42,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#comprar">Quero Comprar</a>
+                            <a class="nav-link" href="#comprar">Quero Comprar <i class="bi bi-basket"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#games">Games</a>
+                            <a class="nav-link" href="#games">Games <i class="bi bi-joystick"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">+Populares</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vídeos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="#videos">Vídeos <i class="bi bi-play-btn"></i></a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login <i class="bi bi-person-circle"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -83,10 +74,10 @@
             <!-- Links no formato de botões -->
              <div class="cta-btn-group">
                 <div class="btn-link">
-                    <a href="">+ Informações</a>
+                    <a href="#comprar">+ Informações</a>
                 </div>
                 <div class="btn-link">
-                    <a href="">Criar Conta</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Criar Conta</a>
                 </div>
              </div>
         </div>
@@ -99,22 +90,28 @@
         <!-- Carregar o grid do bootstrap -->
         <div class="row px-5 d-flex align-items-center justify-content-center">
             <div class="col-lg-7 py-4 text-center my-4">
-                <h2 class="comprar-titulo">Quero Comprar</h2>
+                <h2 class="comprar-titulo">Quero Comprar <i class="bi bi-basket"></i></h2>
                 <p class="comprar-texto">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor iure accusamus laborum accusantium veniam.
                 </p>
                 <div class="cta-btn-group">
                     <div class="btn-link">
-                        <a href="">Assista o tutorial <span class="bi bi-play-circle ms-2"></span></a>
+                        <a href="#video_tutorial">Assista ao tutorial <span class="bi bi-play-circle ms-2"></span></a>
                     </div>
                     <div class="btn-link">
-                        <a href="">Quero comprar agora <span class="bi bi-cart ms-2"></span></a>
+                        <a href="#games">Quero comprar agora <span class="bi bi-cart ms-2"></span></a>
                     </div>
                 </div>
             </div>
             <!-- Imagem qualquer -->
             <div class="col-lg-5 text-center my-4">
                 <img src="./images/gamer.jpg" alt="Foto de um gamer com VR" class="img-fluid comprar-imagem">
+            </div>
+
+            <div class="col-lg-8 py-5" id="video_tutorial">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/O6qD5RZdHC0?si=8NOfjiqF0_V1zZkt" title="FIAP NEXT 2024" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <!-- Fim grid do bootstrap -->
@@ -123,14 +120,98 @@
 
     <!---------------------------------------------------------------------------------- GAMES ---------------------------------------------------------------------------------->
     <section class="container-fluid games text-light" id="games">
-        <h2 class="games-titulo ms-5">Games</h2>
+        <h2 class="games-titulo ms-5">Games <i class="bi bi-joystick"></i></h2>
         
         <!-- Criando o grid de card para os games -->
-        <div class="row my-3 px-5 d-flex justify-content-center align-items-center" id="grid-cards"></div>
+        <div class="row py-3 px-5 d-flex justify-content-center align-items-center" id="grid-cards"></div>
     </section>
     <!---------------------------------------------------------------------------------- FIM GAMES ---------------------------------------------------------------------------------->
 
-<!-- Modal -->
+    <!---------------------------------------------------------------------------------- VÍDEOS ---------------------------------------------------------------------------------->
+    <section class="container-fluid games text-light" id="videos">
+        <h2 class="games-titulo ms-5">Vídeos <i class="bi bi-play-btn"></i></h2>
+        
+        <!-- Criando o grid de card para os vídeos -->
+        <div class="row py-4 px-5 d-flex justify-content-center align-items-center" id="grid-videos">
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/KAriv93tzI0?si=cj1MEdl6yD8XzAe5" title="Cuphead" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/diilMn5gSAg?si=CHC3Sb18gA-Vkr8T" title="Lost in Random" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/C44_HrseDSs?si=gZ7SEC7mswbjLLPv" title="God of War Ragnarök" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/ESvKkbTeAi4?si=n8Gu-A2sH1YEfB1L" title="Hell Let Loose" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/Ye3st9z6jQY?si=ytdWGD5k9zLZXibC" title="The Last Of Us Part II" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/gmA6MrX81z4?si=C9IMIrboEGMPOXVK" title="Red Dead Redemption 2" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/PyMlV5_HRWk?si=WYqQSb-V471wD_Ad" title="Halo Infinite" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/n49TsZAwFEs?si=AfSFxY4aWU8rGZoc" title="LEGO Star Wars: The Skywalker Saga" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/b_iU_gnn28U?si=Fo115lpj5GAV1puc" title="Ghost of Tsushima" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/u4-FCsiF5x4?si=0pof_fBVtMyzzZ49" title="Horizon Zero Dawn" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/lg591kVaGlc?si=lHvglLu33Fq9gXTa" title="Sonic Racing Crossworlds" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/OYmUgbVLs4k?si=UjJHNPYT4EH9F4Pr" title="Shadow of the Colossus" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!---------------------------------------------------------------------------------- FIM VÍDEOS ---------------------------------------------------------------------------------->
+
+    <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -141,24 +222,49 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Fazer Login</button>
+                    <form id="form-dados" name="form-dados" method="get" action="">
+                        <div class="my-2">
+                            <label for="usuario" class="form-label">Usuário</label>
+                            <input type="text" id="usuario" name="usuario" class="form-control border-primary-subtle"
+                            placeholder="Ex: user987456"
+                            minlength="5"
+                            maxlength="20" required>
+                        </div>
+
+                        <div class="my-2">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" id="senha" name="senha" class="form-control border-danger-subtle show box-shadow-danger" placeholder="Ex: @#$%98765" maxlength="50" required>
+                        </div>
+
+                        <div>
+                            <label for="setor" class="form-label">Setor</label>
+                            <select name="setor" id="setor" class="form-select" required>
+                                <option value="" disabled selected>Selecione a sua classe gamer!</option>
+                                <option value="Cavaleiro">Cavaleiro</option>
+                                <option value="Mago">Mago</option>
+                                <option value="Explorador">Explorador</option>
+                                <option value="Guerreiro">Guerreiro</option>
+                                <option value="Curandeiro">Curandeiro</option>
+                                <option value="Necromante">Necromante</option>
+                                <option value="Assassino">Assassino</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button type="submit" class="btn btn-primary">Fazer Login</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
-    
-    
     <!-- Chamada do JS do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous">
     </script>
 
-    <!-- Chamada o meu JS -->
+    <!-- Chamada do meu JS -->
     <script type="module" src="./js/montarCards.js"></script>
     <!-- <script src="./js/base.js"></script> -->
 </body>
